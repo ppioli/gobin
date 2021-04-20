@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  gobin:
+    build: .
+    container_name: gobin
+    restart: unless-stopped
+    ports:
+      - ${PORT:-4333}:5000
